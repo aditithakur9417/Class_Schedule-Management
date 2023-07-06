@@ -1,0 +1,142 @@
+// .scheduleTable{
+//     border-collapse: collapse;
+//     font-weight: 100;
+//     .headRow{
+//         background-color: darkblue;
+//         border-collapse: collapse;
+//         color:white;
+//         border: 20px solid darkblue;
+//         border-radius: 75px;
+
+//     }
+//     th{
+//         font-weight:500;
+//     }
+//     td:first-child,
+// th:first-child {
+//   border-radius: 10px 0 0 10px;
+// }
+
+// }
+.container {
+
+    margin: 20px auto 40px auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+
+    .cartHeading {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: end;
+        font-weight: 800;
+        font-size: 35px;
+        color: #000066;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: end;
+
+        .leftAligned {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .rightAligned {
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-spacing: 0px;
+        width: 100%;
+
+        table-layout: fixed;
+    }
+
+    .seatsNumber {
+        color: #FF8000
+    }
+}
+
+
+table td,
+.scheduleTable th {
+    padding: 20px 0;
+}
+
+table tr:nth-child(odd) {}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding: 20px 0;
+    background-color: #000066;
+    color: white;
+
+}
+
+th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+
+th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+// tr:first-child{
+// padding: 20px 0;
+
+// }
+tr:nth-child(even) {
+    border-top: solid 0.5px grey;
+}
+
+tr:last-child {
+    border-bottom: solid 0.5px grey;
+}
+
+td {
+    border-right: solid 0.5px grey;
+    width: 50px;
+}
+
+tr {
+    td:last-child {
+        text-align: center;
+        padding: 0
+    }
+
+    td:first-child {
+        border-left: solid 0.5px grey;
+    }
+}
+
+tr:not(first-child) {
+    td {
+        padding: 20px 0 20px 10px;
+        border-bottom: solid 0.5px grey;
+    }
+}
+
+.scroll {
+
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

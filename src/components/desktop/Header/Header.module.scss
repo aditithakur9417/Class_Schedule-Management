@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftDivision {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .rowFirst {
+        font-size: 10x;
+        font-weight: 600;
+    }
+
+    .rowSecond {
+        color: #FF8000;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+.cartImage {
+    width: 30px
+}
